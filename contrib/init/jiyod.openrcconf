@@ -1,0 +1,26 @@
+# /etc/conf.d/ddCashd: config file for /etc/init.d/ddCashd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/ddCash/ddCash.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/ddCashd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/ddCashd.pid"
+
+# Where to write ddCashd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/ddCashd"
+
+# User and group to own ddCashd process
+#BITCOIND_USER="ddCash"
+#BITCOIND_GROUP="ddCash"
+
+# Path to ddCashd executable
+#BITCOIND_BIN="/usr/bin/ddCashd"
+
+# Nice value to run ddCashd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

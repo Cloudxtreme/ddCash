@@ -1,0 +1,11 @@
+[Protocol]
+exec=ddCash-qt '%u'
+protocol=ddCash
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

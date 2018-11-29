@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=ddCash
+Comment=ddCash P2P Cryptocurrency
+Comment[fr]=ddCash, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=ddCash, eşten eşe kriptografik sanal para birimi
+Exec=ddCash-qt %u
+Terminal=false
+Type=Application
+Icon=ddCash128
+MimeType=x-scheme-handler/ddCash;
+Categories=Office;Finance;

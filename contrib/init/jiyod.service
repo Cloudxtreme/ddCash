@@ -1,0 +1,26 @@
+[Unit]
+Description=ddCash's distributed currency daemon
+After=network.target
+
+[Service]
+User=ddCash
+Group=ddCash
+
+Type=forking
+PIDFile=/var/lib/ddCashd/ddCashd.pid
+
+ExecStart=/usr/bin/ddCashd -daemon -pid=/var/lib/ddCashd/ddCashd.pid \
+          -conf=/etc/ddCash/ddCash.conf -datadir=/var/lib/ddCashd
+
+ExecStop=-/usr/bin/ddCash-cli -conf=/etc/ddCash/ddCash.conf \
+         -datadir=/var/lib/ddCashd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
